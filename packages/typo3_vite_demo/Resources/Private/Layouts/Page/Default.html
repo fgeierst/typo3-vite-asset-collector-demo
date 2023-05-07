@@ -1,3 +1,13 @@
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:vac="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
+>
+
+<vac:asset.vite
+    manifest="EXT:typo3_vite_demo/Resources/Public/Vite/manifest.json"
+    entry="packages/typo3_vite_demo/Resources/Private/JavaScript/Main.js"
+/>
+
 <ul>
     <f:for each="{mainnavigation}" as="mainnavigationItem">
         <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
