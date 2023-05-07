@@ -13,7 +13,7 @@ This project demonstrates the use of the [Vite AssetCollector extension](https:/
 ## Quick Installation Guide
 
 ```bash
-git clone [...].git
+git clone https://github.com/fgeierst/typo3-vite-asset-collector-demo.git
 cd typo3-vite-asset-collector-demo
 ```
 
@@ -23,6 +23,14 @@ ddev composer install
 ddev exec cp .env.example .env
 ddev snapshot restore --latest
 ```
+
+## Vite development server
+
+The development server is already running in the background (started by `ddev start`). You can control it with
+
+	ddev vite-serve start|stop
+
+Running `ddev pnpm dev` does the same, but shows Vite's output in the terminal - which is helpful for debugging.
 
 ## Test the production build
 
