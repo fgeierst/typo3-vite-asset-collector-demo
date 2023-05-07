@@ -13,8 +13,14 @@
 		},
 		"sort-packages": true
 	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "./packages/*"
+		}
+	],
 	"require": {
-		"bk2k/bootstrap-package": "^13.0",
+		"florian-geierstanger/typo3-vite-demo": "^0.0.1",
 		"praetorius/vite-asset-collector": "dev-main",
 		"typo3/cms-backend": "^12.1.0",
 		"typo3/cms-belog": "^12.1.0",
